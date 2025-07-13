@@ -7,7 +7,7 @@ public class CalculatorLv1 {
 
         Scanner scanner = new Scanner(System.in);
 
-        char yesNo;
+        String exit = "";
 
         do {
             System.out.print("Please Enter the number1: ");
@@ -33,10 +33,10 @@ public class CalculatorLv1 {
                 System.out.println("result = " + result);
             }
 
-            System.out.println("Would you like to calculate again?(y/n) ");
-            yesNo = scanner.next().charAt(0);
+            System.out.println("Do you want to continue? ( : ");
+            exit = scanner.next();
 
-        } while (yesNo == 'y');
+        } while (!exit.equals("exit"));
 
 
 
