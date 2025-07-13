@@ -2,6 +2,7 @@ package calculator;
 
 public class Calculator {
 
+
     int add(int a, int b) {
         int result = a + b;
         return result;
@@ -21,8 +22,6 @@ public class Calculator {
         int result = a / b;
         return result;
     }
-
-
 
 
 
