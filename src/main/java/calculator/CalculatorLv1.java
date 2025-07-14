@@ -55,7 +55,7 @@ public class CalculatorLv1 {
 
             }
 
-            System.out.println("Enter 'exit' to quit. Otherwise, it will continue.");
+            System.out.println("Type 'exit' to quit, or press any other key to continue.");
             exit = scanner.next();
 
         } while (!exit.equals("exit")) ;
