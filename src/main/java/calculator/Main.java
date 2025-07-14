@@ -34,7 +34,9 @@ public class Main {
                 System.out.println("Result: " + divide);
             }
 
+
             System.out.println("Type 'exit' to quit, or press any other key to continue.");
+
             yesNo = scanner.next().charAt(0);
 
         } while(yesNo == 'y');
