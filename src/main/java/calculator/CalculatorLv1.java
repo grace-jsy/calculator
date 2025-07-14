@@ -40,6 +40,7 @@ public class CalculatorLv1 {
                 result = inputNum1 * inputNum2;
                 System.out.println("result = " + result);
             } else if (symbol == '/') {
+
                 do {
                     if (inputNum2 == 0) {
                         System.out.println("It can't be divided by ZERO");
@@ -58,6 +59,7 @@ public class CalculatorLv1 {
             exit = scanner.next();
 
         } while (!exit.equals("exit")) ;
+                
 
     }
 }

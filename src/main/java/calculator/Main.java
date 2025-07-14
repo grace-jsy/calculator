@@ -7,35 +7,38 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please Enter the number1: ");
-        int inputNumber1 = scanner.nextInt();
-        System.out.print("Please Enter the symbol: ");
-        char symbol = scanner.next().charAt(0);
-        System.out.print("Please Enter the number2: ");
-        int inputNumber2 = scanner.nextInt();
+        char yesNo;
 
-        Calculator calculator = new Calculator();
+        do {
 
-        int add = calculator.add(inputNumber1, inputNumber2);
-        System.out.println("Result: " + add);
+            Calculator calculator = new Calculator();
 
-        int subtract = calculator.subtract(inputNumber1, inputNumber2);
-        System.out.println("Result: " + subtract);
+            System.out.print("Please Enter the number1: ");
+            int inputNumber1 = scanner.nextInt();
+            System.out.print("Please Enter the symbol: ");
+            char symbol = scanner.next().charAt(0);
+            System.out.print("Please Enter the number2: ");
+            int inputNumber2 = scanner.nextInt();
 
-        int multiply = calculator.multiply(inputNumber1, inputNumber2);
-        System.out.println("Result: " + multiply);
+            if (symbol == '+') {
+                int add = calculator.add(inputNumber1, inputNumber2);
+                System.out.println("Result: " + add);
+            } else if (symbol == '-') {
+                int subtract = calculator.subtract(inputNumber1, inputNumber2);
+                System.out.println("Result: " + subtract);
+            } else if (symbol == '*') {
+                int multiply = calculator.multiply(inputNumber1, inputNumber2);
+                System.out.println("Result: " + multiply);
+            } else if (symbol == '/') {
+                int divide = calculator.divide(inputNumber1, inputNumber2);
+                System.out.println("Result: " + divide);
+            }
 
-        int divide = calculator.divide(inputNumber1, inputNumber2);
-        System.out.println("Result: " + divide);
+            System.out.println("Would you like to calculate again?(y/n) ");
+            yesNo = scanner.next().charAt(0);
 
+        } while(yesNo == 'y');
 
-
-
-        
-        
-        
-        
-        
         
     }
 }
