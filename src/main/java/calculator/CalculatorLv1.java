@@ -13,7 +13,7 @@ public class CalculatorLv1 {
             int inputNum1 = scanner.nextInt();
 
             if (inputNum1 < 0) {
-                System.out.println("0이상만써");
+                System.out.println("Only positive integers are allowed.");
                 continue;
             }
 
@@ -24,7 +24,7 @@ public class CalculatorLv1 {
             int inputNum2 = scanner.nextInt();
 
             if (inputNum2 < 0) {
-                System.out.println("0이상만써");
+                System.out.println("Only positive integers are allowed.");
                 continue;
             }
 
