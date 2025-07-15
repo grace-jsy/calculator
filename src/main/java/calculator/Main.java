@@ -5,13 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
         String exit = "";
 
         do {
-
-            Calculator calculator = new Calculator();
 
             System.out.print("Please Enter the number1: ");
             int inputNumber1 = scanner.nextInt();
@@ -48,7 +47,7 @@ public class Main {
                             System.out.println("It can't be divided by ZERO");
                             System.out.print("Please Enter the number2: ");
                             inputNumber2 = scanner.nextInt();
-                        } else if (inputNumber2 != 0) {
+                        } else {
                             result = inputNumber1 / inputNumber2;
                             System.out.println("result = " + result);
                             break;
